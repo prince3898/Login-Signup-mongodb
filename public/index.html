@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- LOGIN FORM -->
+
+      <form class="form" id="login">
+        <h1 class="form__title">Login</h1>
+        <div class="form__message form__message--error"></div>
+        <div class="form__input-group">
+          <input
+            type="text"
+            class="form__input"
+            autofocus
+            placeholder="Username or email"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+          <input
+            type="password"
+            class="form__input"
+            autofocus
+            placeholder="Password"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+        <button class="form__button" type="submit">Continue</button>
+        <p class="form__text">
+          <a class="form__link" href="./" id="linkChangePassword"
+            >Forgot password?</a
+          >
+        </p>
+        <p class="form__text">
+          <a class="form__link" href="./" id="linkCreateAccount"
+            >Don't have an account? Create account</a
+          >
+        </p>
+      </form>
+
+      <!-- CREATE ACCOUNT FORM -->
+
+      <form
+        action="/signup"
+        method="POST"
+        class="form form--hidden"
+        id="createAccount"
+      >
+        <h1 class="form__title">Create Account</h1>
+        <div class="form__message form__message--error"></div>
+        <div class="form__input-group">
+          <input
+            type="text"
+            id="signupUsername"
+            class="form__input"
+            autofocus
+            placeholder="Username"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+
+        <div class="form__input-group">
+          <input
+            type="text"
+            class="form__input"
+            autofocus
+            placeholder="Email Address"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+          <input
+            type="password"
+            class="form__input"
+            autofocus
+            placeholder="Password"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+
+        <div class="form__input-group">
+          <input
+            type="password"
+            class="form__input"
+            autofocus
+            placeholder="Confirm Password"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+
+        <button class="form__button" type="submit">Continue</button>
+
+        <p class="form__text">
+          <a class="form__link" href="./" id="linkLogin"
+            >Already have an Account? Log in</a
+          >
+        </p>
+      </form>
+
+      <!-- FORGOT PASSWORD FORM -->
+
+      <form class="form form--hidden" id="changePassword">
+        <h1 class="form__title">Change Password</h1>
+        <div class="form__message form__message--error"></div>
+        <div class="form__input-group">
+          <input
+            type="text"
+            id="signupUsername2"
+            class="form__input"
+            autofocus
+            placeholder="Username"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+
+        <div class="form__input-group">
+          <input
+            type="password"
+            class="form__input"
+            autofocus
+            placeholder="New Password"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+          <input
+            type="password"
+            class="form__input"
+            autofocus
+            placeholder="Confirm New Password"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+
+        <button class="form__button" type="submit">Continue</button>
+
+        <p class="form__text">
+          <a class="form__link" href="./" id="linkLogin2">Back to login</a>
+        </p>
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
